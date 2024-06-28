@@ -1,5 +1,5 @@
 # Simple workflow for deploying React app to GitHub Pages
-name: Deploy React App to Pages
+name: Deploy App to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
