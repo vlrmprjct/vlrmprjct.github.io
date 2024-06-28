@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# React App Kickstart
 
-You can use the [editor on GitHub](https://github.com/vlrmprjct/vlrmprjct.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Branches
+* `main` branch contains a basic setup
+* `main-extended` includes full lint config + `.npmrc` template
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Rules
+* No CRA ( create-react-app )
+* Minimum setup
+* Maximum comfort
+* Readable webpack config
+* Less thirdparty config packages
 
-### Markdown
+### Environnment supported dot-env's
+* `.env.production`
+* `.env.development`
+* `.env.local`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Currently build-In
+* Typescript support ✅
+* SCSS support ✅
+* Global SCSS import file support ✅
+* Dot.Env support ✅
+* Compressed minified production-mode ✅
+* Splitted chunks ✅
+* Assets directory ✅
+* SVG support ✅
+* Images support ✅
+* Webfonts support ✅
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vlrmprjct/vlrmprjct.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Tasks up to you @ `main` branch
+* Eslint
+* Stylelint
+* Browserlist

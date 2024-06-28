@@ -1,1 +1,12 @@
-*.code-workspace
+.vscode
+.idea
+.vercel
+node_modules
+dist
+build
+*.log
+*.bck
+*.local
+.nvmrc
+.npmrc
+
