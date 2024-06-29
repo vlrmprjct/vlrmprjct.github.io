@@ -1,12 +1,12 @@
 {
-    "name": "react-app-kickstart",
-    "version": "1.0.12",
-    "description": "React Application Kickstart Project",
+    "name": "vlrmprjct.github.io",
+    "version": "1.0.0",
+    "description": "vlrm.prjct Dev Portfolio",
     "main": "./dist",
     "author": "Thomas Meschke <mail@lokalnetz.com>",
-    "homepage": "https://vlrmprjct.github.io/vlrmprjct.github.io",
+    "homepage": "https://vlrmprjct.github.io",
     "license": "MIT",
-    "repository": "",
+    "repository": "https://github.com/vlrmprjct/vlrmprjct.github.io",
     "scripts": {
         "start": "NODE_ENV=development webpack serve --config config/webpack.config.js --env development --hot",
         "build": "NODE_ENV=production webpack --config config/webpack.config.js --env production",
