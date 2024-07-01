@@ -1,0 +1,9 @@
+export { About } from './About/About';
+export { Contact } from './Contact/Contact';
+export { Footer } from './Footer/Footer';
+export { Header } from './Header/Header';
+export { ScrollToTop } from './ScrollToTop/ScrollToTop';
+export { Skills } from './Skills/Skills';
+export { Projects } from './Projects/Projects';
+export { Navbar } from './Navbar/Navbar';
+export { ProjectContainer } from './ProjectContainer/ProjectContainer';

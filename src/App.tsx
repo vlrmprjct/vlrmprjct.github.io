@@ -1,10 +1,28 @@
-import React from "react";
+import React from 'react';
+import {
+    About,
+    Contact,
+    Footer,
+    Header,
+    ScrollToTop,
+    Skills,
+    Projects,
+} from '@/components';
 
 export const App = () => {
+
     return (
-        <div className="app">
-            <h1>Hello {process.env.APP_NAME}</h1>
-            <h2>Start editing!</h2>
-        </div>
+        <>
+            <Header />
+            <main>
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+            </main>
+            <ScrollToTop />
+            <Footer />
+        </>
     );
+
 };
