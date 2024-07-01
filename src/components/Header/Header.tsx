@@ -5,13 +5,18 @@ import { header } from '../../portfolio';
 import './Header.scss';
 
 export const Header = () => {
-    const { homepage, title } = header
+
+    const {
+        github,
+        homepage,
+        title,
+    } = header;
 
     return (
         <header className='header center'>
             <h3>
                 <a href={homepage}>
-                    <Avatar username='vlrmprjct' alt={title} />
+                    <Avatar username={github} alt={title} />
                 </a>
             </h3>
             <Navbar />
