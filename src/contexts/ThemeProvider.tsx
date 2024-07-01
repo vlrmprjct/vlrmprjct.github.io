@@ -24,8 +24,7 @@ export const ThemeProvider = ({ children }) => {
         setThemeName(name);
     }
 
-    document.body.classList.add(themeName);
-    document.body.classList.remove(themeName === 'dark' ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', themeName);
 
     return (
         <ThemeContext.Provider value={[{ themeName, toggleTheme }]}>
