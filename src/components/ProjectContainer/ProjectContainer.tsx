@@ -4,14 +4,14 @@ import './ProjectContainer.scss'
 
 export const ProjectContainer = ({ project }) => (
 
-    <div className='project'>
+    <div className="project">
         <h3>{project.name}</h3>
 
-        <p className='project__description'>{project.description}</p>
+        <p className="project--description">{project.description}</p>
         {project.stack && (
-            <ul className='project__stack'>
+            <ul className="project--stack">
                 {project.stack.map((item) => (
-                    <li key={item} className='project__stack-item'>
+                    <li key={item} className="project--stack-item">
                         {item}
                     </li>
                 ))}
@@ -21,8 +21,8 @@ export const ProjectContainer = ({ project }) => (
         {project.sourceCode && (
             <a
                 href={project.sourceCode}
-                aria-label='source code'
-                className='link link--icon'
+                aria-label="source code"
+                className="link link--icon"
             >
                 G
             </a>
@@ -31,8 +31,8 @@ export const ProjectContainer = ({ project }) => (
         {project.livePreview && (
             <a
                 href={project.livePreview}
-                aria-label='live preview'
-                className='link link--icon'
+                aria-label="live preview"
+                className="link link--icon"
             >
                 L
             </a>

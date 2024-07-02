@@ -9,10 +9,10 @@ export const Projects = () => {
     if (!projects.length) return null;
 
     return (
-        <section id='projects' className='section projects'>
-            <h2 className='section__title'>Projects</h2>
+        <section id="projects" className="section projects">
+            <h2 className="section--title">Projects</h2>
 
-            <div className='projects__grid'>
+            <div className="projects--grid">
                 {projects.map((project) => (
                     <ProjectContainer key={project.name} project={project} />
                 ))}

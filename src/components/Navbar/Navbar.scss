@@ -2,13 +2,12 @@
     &--list {
         margin-right: 1.5rem;
         display: flex;
-    }
-    &--list-item {
-        margin-left: 1.5rem;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
     }
 
     &--menu {
-        text-indent: -9999rem;
+        display: none;
     }
 
     @media (max-width: #{convert-px-to-rem(600)}) {
@@ -24,15 +23,9 @@
             z-index: 2;
         }
 
-        &--list-item {
-            margin: 0.5rem 0;
-        }
-
         &--menu {
             display: flex;
             z-index: 2;
-            margin-left: 2rem;
-            text-indent: 0;
         }
     }
 }

@@ -1,12 +1,10 @@
-.scroll-top {
-  position: fixed;
-  bottom: 2em;
-  right: 4em;
-  background-color: transparent;
-}
+.scroll--top {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    background-color: transparent;
 
-@media (max-width: 900px) {
-  .scroll-top {
-    display: none;
-  }
+    @media (max-width: #{convert-px-to-rem($lg)}) {
+        display: none;
+    }
 }

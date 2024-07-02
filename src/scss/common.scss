@@ -12,6 +12,10 @@
 html {
    font-size: 10px;
    scroll-behavior: smooth;
+
+    @media (max-width: #{convert-px-to-rem(600)}) {
+        font-size: 9px;
+    }
 }
 
 body {
@@ -21,6 +25,10 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 0 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
 }
 
 ul {

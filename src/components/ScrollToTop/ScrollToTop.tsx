@@ -15,8 +15,8 @@ export const ScrollToTop = () => {
     }, [])
 
     return isVisible ? (
-        <div className='scroll-top'>
-            <a href='#top'>
+        <div className="scroll--top">
+            <a href="#top">
                 top
             </a>
         </div>

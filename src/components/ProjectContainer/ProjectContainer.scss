@@ -1,33 +1,31 @@
 .project {
-  padding: 2em;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
-}
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
 
-.project:hover {
-  transform: translateY(-7px);
-}
+    &:hover {
+        transform: translateY(0.2rem);
+    }
 
-.project__description {
-  margin-top: 1em;
-}
+    &--description {
+        margin-top: 1rem;
+    }
 
-.project__stack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
-}
+    &--stack {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1.2rem 0;
 
-.project__stack-item {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: var(--clr-fg-alt);
-}
+        &-item {
+            margin: 0.5rem;
+            font-weight: 500;
+        }
+    }
 
-.project .link--icon {
-  margin-left: 0.5em;
+    .link--icon {
+        margin-left: 0.5rem;
+    }
 }

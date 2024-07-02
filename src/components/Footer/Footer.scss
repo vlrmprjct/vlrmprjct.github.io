@@ -1,6 +1,6 @@
 .footer {
-    padding: 3em 0;
-    margin-top: 4em;
+    padding: 3rem 0;
+    margin-top: 4rem;
     text-align: center;
 
     &--link {
@@ -8,9 +8,9 @@
         color: var(--clr-fg);
     }
 
-    @media (max-width: 600px) {
-        padding: 2em;
-        margin-top: 3em;
+    @media (max-width: #{convert-px-to-rem($sm)}) {
+        padding: 2rem;
+        margin-top: 3rem;
     }
 
 }

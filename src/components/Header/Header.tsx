@@ -13,7 +13,7 @@ export const Header = () => {
     } = header;
 
     return (
-        <header className='header center'>
+        <header>
             <h3>
                 <a href={homepage}>
                     <Avatar username={github} alt={title} />

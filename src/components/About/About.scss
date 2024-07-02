@@ -1,37 +1,17 @@
 .about {
     flex-direction: column;
-    margin-top: 3em;
 
-    &__name {
-        color: var(--clr-primary);
+    &--role {
+        margin-top: 1.2rem;
     }
 
-    &__role {
-        margin-top: 1.2em;
+    &--desc {
+        max-width: 60rem;
     }
 
-    &__desc {
-        font-size: 1.6rem;
-        max-width: 600px;
-    }
-
-    &__desc,
-    &__contact {
-        margin-top: 2.4em;
-    }
-
-    .link--icon {
-        margin-right: 0.8em;
-    }
-
-    .btn--outline {
-        margin-right: 1em;
-    }
-
-    @media (max-width: 600px) {
-        .app & {
-            align-items: flex-start;
-            margin-top: 2em;
-        }
+    &--desc,
+    &--contact {
+        margin-top: 2.4rem;
+        gap: 3rem;
     }
 }
