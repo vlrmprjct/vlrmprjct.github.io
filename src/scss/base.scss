@@ -1,4 +1,10 @@
 // add some global variables here
 // they are available in all scss files
+// see webpack config for more details
 
 // $bg: #23D19D;
+
+@function convert-px-to-rem($rem) {
+    $calculated-value: calc($rem / 16);
+    @return #{$calculated-value} + rem;
+}

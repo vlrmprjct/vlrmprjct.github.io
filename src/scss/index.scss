@@ -58,10 +58,8 @@ main {
 .btn {
     display: block;
     cursor: pointer;
-    padding: 0.8em 1.4em;
-    font-weight: 500;
+    padding: 0.8rem 1.4rem;
     font-size: 1.5rem;
-    text-transform: lowercase;
     transition: transform 0.2s ease-in-out;
 
     &--outline {
@@ -96,7 +94,6 @@ main {
     }
 
     &--plain {
-        text-transform: initial;
         background-color: var(--accent);
         box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
         border: 0;
@@ -115,14 +112,7 @@ main {
         }
 
         &:active {
-            transform: translateY(-5px);
+            transform: translateY(-0.1rem);
         }
-    }
-}
-
-
-@media (max-width: 600rem) {
-    .section {
-        margin-top: 4rem;
     }
 }
