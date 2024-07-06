@@ -1,6 +1,5 @@
 export { About } from './About/About';
 export { Avatar } from './Avatar/Avatar';
-export { Contact } from './Contact/Contact';
 export { Footer } from './Footer/Footer';
 export { Header } from './Header/Header';
 export { ScrollToTop } from './ScrollToTop/ScrollToTop';

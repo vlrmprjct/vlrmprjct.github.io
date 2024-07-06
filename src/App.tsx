@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     About,
-    Contact,
     Footer,
     Header,
     ScrollToTop,
@@ -18,7 +17,6 @@ export const App = () => {
                 <About />
                 <Projects />
                 <Skills />
-                <Contact />
             </main>
             <ScrollToTop />
             <Footer />
