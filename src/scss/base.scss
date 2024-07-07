@@ -1,4 +1,20 @@
 // add some global variables here
 // they are available in all scss files
+// see webpack config for more details
 
-$bg: #23D19D;
+$sm: 576 !default;
+$md: 768 !default;
+$lg: 992 !default;
+$xl: 1200  !default;
+
+$breakpoints: (
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+) !default;
+
+@function convert-px-to-rem($rem) {
+    $calculated-value: calc($rem / 16);
+    @return #{$calculated-value} + rem;
+}

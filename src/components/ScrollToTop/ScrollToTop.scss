@@ -1,0 +1,9 @@
+.scroll--top {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+
+    @media (max-width: #{convert-px-to-rem($lg)}) {
+        display: none;
+    }
+}

@@ -25,6 +25,12 @@ module.exports = (env) => {
                 '@': path.resolve(__dirname, './../src'),
             }
         },
+        entry: {
+            main: [
+                path.resolve(__dirname, './../src/scss/index.scss'),
+                path.resolve(__dirname, './../src/index.tsx'),
+            ],
+        },
         module: {
             rules: [
                 {

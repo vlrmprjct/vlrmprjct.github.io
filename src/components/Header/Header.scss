@@ -1,0 +1,14 @@
+header {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    height: 10rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 110rem;
+    width: 100%;
+
+    @media (max-width: #{convert-px-to-rem($sm)}) {
+        height: 8rem;
+    }
+}

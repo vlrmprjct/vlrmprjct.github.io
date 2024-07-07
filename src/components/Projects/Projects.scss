@@ -1,0 +1,7 @@
+.projects--grid {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    grid-gap: 2rem;
+}

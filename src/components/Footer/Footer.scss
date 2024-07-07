@@ -1,0 +1,8 @@
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+
+    @media (max-width: #{convert-px-to-rem($sm)}) {
+        padding: 1rem;
+    }
+}

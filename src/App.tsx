@@ -1,10 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import { fetchData } from '@/utils';
+import { common } from '@/queries';
+import {
+    About,
+    Footer,
+    Header,
+    ScrollToTop,
+    Stack,
+    Projects,
+    Personal,
+} from '@/components';
 
 export const App = () => {
+
+    const [commonData, setCommonData] = useState({
+        profile: {},
+        stack: [],
+    });
+
+    useEffect(() => {
+        fetchData(common, ({ data }) => {
+            setCommonData(JSON.parse(data.repository.object.text.replace(/^"(.*)"$/, '$1')));
+        });
+    }, []);
+
+    const { profile, stack } = commonData;
+
     return (
-        <div className="app">
-            <h1>Hello {process.env.APP_NAME}</h1>
-            <h2>Start editing!</h2>
-        </div>
+        <>
+            <Header data={profile} />
+            <main>
+                <About data={profile} />
+                <Projects />
+                <Stack data={stack} />
+                <Personal />
+            </main>
+            <ScrollToTop />
+            <Footer />
+        </>
     );
+
 };
