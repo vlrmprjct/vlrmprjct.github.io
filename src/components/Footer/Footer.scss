@@ -1,16 +1,8 @@
 .footer {
     padding: 3rem 0;
-    margin-top: 4rem;
     text-align: center;
 
-    &--link {
-        font-size: 1.3rem;
-        color: var(--clr-fg);
-    }
-
     @media (max-width: #{convert-px-to-rem($sm)}) {
-        padding: 2rem;
-        margin-top: 3rem;
+        padding: 1rem;
     }
-
 }

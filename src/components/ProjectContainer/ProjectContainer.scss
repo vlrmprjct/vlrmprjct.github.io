@@ -1,16 +1,28 @@
 .project {
+    border: 0.1rem solid transparent;
+    border-color: var(--border-default);
+    border-radius: 0.3rem;
     padding: 2rem;
     margin: 0 auto;
     text-align: center;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s linear;
+    transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-    &:hover {
-        transform: translateY(0.2rem);
+    &:hover,
+    &:focus-within {
+        transform: translateY(-0.2rem);
+        border-color: var(--accent-hover);
+    }
+
+    h3 {
+        text-transform: capitalize;
     }
 
     &--description {
         margin-top: 1rem;
+        flex-grow: 1;
     }
 
     &--stack {
@@ -21,11 +33,12 @@
 
         &-item {
             margin: 0.5rem;
-            font-weight: 500;
         }
     }
 
-    .link--icon {
-        margin-left: 0.5rem;
+    &--lang {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
     }
 }

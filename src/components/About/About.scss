@@ -7,11 +7,14 @@
 
     &--desc {
         max-width: 60rem;
+        white-space: break-spaces;
     }
 
     &--desc,
     &--contact {
-        margin-top: 2.4rem;
+        margin-top: 4rem;
         gap: 3rem;
+        flex-flow: wrap;
+        justify-content: center;
     }
 }

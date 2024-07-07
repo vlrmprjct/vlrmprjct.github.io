@@ -41,6 +41,8 @@ jobs:
         run: npm ci
 
       - name: Build App
+        env:
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: npm run build
 
       - name: Upload artifact

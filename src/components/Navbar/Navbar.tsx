@@ -3,7 +3,6 @@ import { ThemeContext } from '@/contexts/ThemeProvider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
-import { projects, skills, contact } from '@/portfolio';
 
 import './Navbar.scss';
 
@@ -20,41 +19,36 @@ export const Navbar = () => {
                 style={{ display: showNavList ? 'flex' : null }}
                 className="nav--list"
             >
-                {projects.length ? (
-                    <li className="nav--list-item">
-                        <a
-                            href="#projects"
-                            onClick={toggleNavList}
-                            className="link link--nav"
-                        >
-                            Projects
-                        </a>
-                    </li>
-                ) : null}
+                <li className="nav--list-item">
+                    <a
+                        href="#projects"
+                        onClick={toggleNavList}
+                        className="link link--nav"
+                    >
+                        Projects
+                    </a>
+                </li>
 
-                {skills.length ? (
-                    <li className="nav--list-item">
-                        <a
-                            href="#skills"
-                            onClick={toggleNavList}
-                            className="link link--nav"
-                        >
-                            Skills
-                        </a>
-                    </li>
-                ) : null}
+                <li className="nav--list-item">
+                    <a
+                        href="#stack"
+                        onClick={toggleNavList}
+                        className="link link--nav"
+                    >
+                        Stack
+                    </a>
+                </li>
 
-                {contact.email ? (
-                    <li className="nav--list-item">
-                        <a
-                            href="#contact"
-                            onClick={toggleNavList}
-                            className="link link--nav"
-                        >
-                            Contact
-                        </a>
-                    </li>
-                ) : null}
+                <li className="nav--list-item">
+                    <a
+                        href="#personal"
+                        onClick={toggleNavList}
+                        className="link link--nav"
+                    >
+                        About
+                    </a>
+                </li>
+
             </ul>
 
             <button

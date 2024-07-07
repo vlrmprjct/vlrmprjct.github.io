@@ -5,7 +5,7 @@
 [data-root] {
     display: flex;
     flex-flow: column;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 main {
@@ -55,10 +55,13 @@ main {
 }
 
 .btn {
+    align-items: center;
     cursor: pointer;
-    padding: 0.8rem 1.4rem;
-    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
     transition: transform 0.2s ease-in-out;
+    white-space: nowrap;
 
     &--outline {
         color: var(--accent);
@@ -103,5 +106,9 @@ main {
         &:active {
             transform: translateY(-0.1rem);
         }
+    }
+
+    > svg {
+        background: transparent;
     }
 }

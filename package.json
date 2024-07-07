@@ -19,7 +19,9 @@
         "@fortawesome/free-solid-svg-icons": "^6.5.2",
         "@fortawesome/react-fontawesome": "^0.2.2",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "react-dom": "^18.3.1",
+        "react-markdown": "^9.0.1",
+        "remark-gfm": "^4.0.0"
     },
     "devDependencies": {
         "@svgr/webpack": "^8.1.0",

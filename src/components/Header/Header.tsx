@@ -1,16 +1,15 @@
 import React from 'react';
 import { Avatar, Navbar } from './..';
-import { header } from '../../portfolio';
 
 import './Header.scss';
 
-export const Header = () => {
+export const Header = ({ data }) => {
 
     const {
         github,
         homepage,
         title,
-    } = header;
+    } = data;
 
     return (
         <header>
