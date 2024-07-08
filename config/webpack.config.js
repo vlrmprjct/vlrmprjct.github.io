@@ -118,7 +118,12 @@ module.exports = (env) => {
                 ]
             }),
         ],
+        performance: {
+            maxEntrypointSize: 512000,
+            maxAssetSize: 512000,
+        },
         optimization: {
+            minimize: true,
             minimizer: [
                 new TerserPlugin({
                     extractComments: false,
@@ -132,17 +137,17 @@ module.exports = (env) => {
             ],
             splitChunks: {
                 chunks: 'all',
-                maxInitialRequests: Infinity,
-                minSize: 0,
-                cacheGroups: {
-                    vendor: {
-                        test: /[\\/](vendor|node_modules)[\\/](?=.*\.js$)/,
-                        name(module) {
-                            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-                            return `vendors.${packageName.replace('@', '')}`;
-                        },
-                    },
-                },
+                // maxInitialRequests: Infinity,
+                // minSize: 0,
+                // cacheGroups: {
+                //     vendor: {
+                //         test: /[\\/](vendor|node_modules)[\\/](?=.*\.js$)/,
+                //         name(module) {
+                //             const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+                //             return `vendors.${packageName.replace('@', '')}`;
+                //         },
+                //     },
+                // },
             },
         },
         output: {
