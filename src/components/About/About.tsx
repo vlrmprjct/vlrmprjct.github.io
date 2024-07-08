@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '@/utils';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faSoundcloud, faSpotify } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf, faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { Icon } from '@/components';
 import { about } from '@/queries';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -37,14 +35,14 @@ export const About = ({ data }) => {
             <div className="about--contact center">
                 {cv && (
                     <a className="btn btn--outline" download href={cv}>
-                        <FontAwesomeIcon icon={faFilePdf} />
+                        <Icon icon="PDF" className="icon--small" />
                         Get my PDF-CV !
                     </a>
                 )}
 
                 {email && (
                     <a className="btn btn--outline" href="mailto:&#109;&#97;&#105;&#108;&#64;&#108;&#111;&#107;&#97;&#108;&#110;&#101;&#116;&#122;&#46;&#99;&#111;&#109;">
-                        <FontAwesomeIcon icon={faEnvelope} />
+                        <Icon icon="Envelop" className="icon--small" />
                         &#69;&#109;&#97;&#105;&#108;
                     </a>
                 )}
@@ -57,7 +55,7 @@ export const About = ({ data }) => {
                                 aria-label="github"
                                 className="link link--icon"
                             >
-                                <FontAwesomeIcon icon={faGithub} size="2x" />
+                                <Icon icon="Github" />
                             </a>
                         )}
 
@@ -67,7 +65,7 @@ export const About = ({ data }) => {
                                 aria-label="linkedin"
                                 className="link link--icon"
                             >
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                                <Icon icon="Linkedin" />
                             </a>
                         )}
 
@@ -77,7 +75,7 @@ export const About = ({ data }) => {
                                 aria-label="soundcloud"
                                 className="link link--icon"
                             >
-                                <FontAwesomeIcon icon={faSoundcloud} size="2x" />
+                                <Icon icon="Soundcloud" />
                             </a>
                         )}
 
@@ -87,7 +85,7 @@ export const About = ({ data }) => {
                                 aria-label="spotify"
                                 className="link link--icon"
                             >
-                                <FontAwesomeIcon icon={faSpotify} size="2x" />
+                                <Icon icon="Spotify" />
                             </a>
                         )}
                     </>

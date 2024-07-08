@@ -35,6 +35,10 @@ main {
 
     &:hover {
         color: var(--accent);
+
+        > svg * {
+            fill: var(--accent);
+        }
     }
 
     &::before {
@@ -74,6 +78,10 @@ main {
         &:hover,
         &:focus {
             color: var(--text-primary-invert);
+
+            > svg * {
+                fill: var(--text-primary-invert);
+            }
         }
 
         &:before {

@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react';
+import { Icon } from '@/components/';
 import { ThemeContext } from '@/contexts/ThemeProvider';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 
 import './Navbar.scss';
 
@@ -58,8 +56,8 @@ export const Navbar = () => {
                 aria-label="toggle theme"
             >
                 {themeName === 'dark' ?
-                    <FontAwesomeIcon icon={faSun} size="xl" /> :
-                    <FontAwesomeIcon icon={faMoon} size="xl" />
+                    <Icon icon="Sun" /> :
+                    <Icon icon="Moon" />
                 }
             </button>
 
@@ -70,8 +68,8 @@ export const Navbar = () => {
                 aria-label="toggle navigation"
             >
                 {showNavList ?
-                    <FontAwesomeIcon icon={faClose} size="xl" /> :
-                    <FontAwesomeIcon icon={faBars} size="xl" />
+                    <Icon icon="Close" /> :
+                    <Icon icon="Menu" />
                 }
             </button>
         </nav>

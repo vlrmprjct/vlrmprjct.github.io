@@ -1,7 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@/components';
 
 import './ProjectContainer.scss'
 
@@ -31,7 +29,7 @@ export const ProjectContainer = ({ project }) => (
                     aria-label="source code"
                     className="link link--icon"
                 >
-                    <FontAwesomeIcon icon={faGithub} />
+                    <Icon icon="Github" className="icon--small" />
                 </a>
             )}
 
@@ -41,7 +39,7 @@ export const ProjectContainer = ({ project }) => (
                     aria-label="live preview"
                     className="link link--icon"
                 >
-                    <FontAwesomeIcon icon={faLaptop} />
+                    <Icon icon="Notebook" className="icon--small" />
                 </a>
             )}
         </p>

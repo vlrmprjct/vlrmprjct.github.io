@@ -1,0 +1,13 @@
+.icon {
+    vertical-align: -0.125em;
+    align-self: center;
+    transform: scale(1.4);
+
+    > * {
+        fill: var(--accent);
+    }
+
+    &--small {
+        transform: scale(1);
+    }
+}
