@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchData } from '@/utils';
 import { common } from '@/queries';
 import {
+    CRT,
     About,
     Footer,
     Header,
@@ -37,6 +38,7 @@ export const App = () => {
             </main>
             <ScrollToTop />
             <Footer />
+            <CRT />
         </>
     );
 

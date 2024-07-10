@@ -1,4 +1,6 @@
 import Close from './close.svg';
+import CRT from './crt.svg';
+import CRT_ON from './crt-on.svg';
 import Envelop from './envelop.svg';
 import Github from './github.svg';
 import Linkedin from './linkedin.svg';
@@ -12,6 +14,8 @@ import Sun from './sun.svg';
 
 export {
     Close,
+    CRT,
+    CRT_ON,
     Envelop,
     Github,
     Linkedin,
