@@ -42,6 +42,15 @@ $horizonDark: (
     }
 }
 
+:root[data-theme="light"][data-crt="on"] {
+    --accent: #555555;
+    --background-primary: #FAEBD7;
+}
+
+// :root[data-theme="dark"][data-crt="on"] {
+//     --accent: #E6AE06;
+// }
+
 :root {
     @each $key, $value in $horizonLight {
         #{$key}: $value;

@@ -4,30 +4,38 @@ export const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
 
-    const [themeName, setThemeName] = useState('light');
+    const [theme, setTheme] = useState('light');
+    const [crt, setCrt] = useState('off');
 
     useEffect(() => {
         const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-        localStorage.getItem('themeName') ?
-            setThemeName(localStorage.getItem('themeName')) :
-            setThemeName(darkMediaQuery.matches ? 'dark' : 'light');
+        localStorage.getItem('theme') ?
+            setTheme(localStorage.getItem('theme')) :
+            setTheme(darkMediaQuery.matches ? 'dark' : 'light');
 
         darkMediaQuery.addEventListener('change', ({ matches }) => {
-            setThemeName(matches ? 'dark' : 'light');
+            setTheme(matches ? 'dark' : 'light');
         });
     }, [])
 
     const toggleTheme = () => {
-        const name = themeName === 'dark' ? 'light' : 'dark';
-        localStorage.setItem('themeName', name);
-        setThemeName(name);
+        const name = theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', name);
+        setTheme(name);
     }
 
-    document.documentElement.setAttribute('data-theme', themeName);
+    const toggleCrt = () => {
+        const mode = crt === 'on' ? 'off' : 'on';
+        localStorage.setItem('crt', mode);
+        setCrt(mode);
+        document.documentElement.setAttribute('data-crt', mode);
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
 
     return (
-        <ThemeContext.Provider value={[{ themeName, toggleTheme }]}>
+        <ThemeContext.Provider value={[{ theme, toggleTheme, crt, toggleCrt }]}>
             {children}
         </ThemeContext.Provider>
     )

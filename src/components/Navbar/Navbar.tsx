@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react';
-import { Icon } from '@/components/';
+import {
+    Icon,
+} from '@/components/';
 import { ThemeContext } from '@/contexts/ThemeProvider';
 
 import './Navbar.scss';
 
 export const Navbar = () => {
 
-    const [{ themeName, toggleTheme }] = useContext(ThemeContext);
+    const [{ theme, crt, toggleCrt, toggleTheme }] = useContext(ThemeContext);
     const [showNavList, setShowNavList] = useState(false);
 
     const toggleNavList = () => setShowNavList(!showNavList);
@@ -55,9 +57,22 @@ export const Navbar = () => {
                 className="btn btn--icon"
                 aria-label="toggle theme"
             >
-                {themeName === 'dark' ?
+                {theme === 'dark' ?
                     <Icon icon="Sun" /> :
                     <Icon icon="Moon" />
+                }
+            </button>
+
+            <button
+                type="button"
+                onClick={toggleCrt}
+                className="btn btn--icon"
+                aria-label="toggle CRT"
+                title="Simulate vintage CRT monitor"
+            >
+                {crt === 'off' ?
+                    <Icon icon="CRT" /> :
+                    <Icon icon="CRT_ON" />
                 }
             </button>
 

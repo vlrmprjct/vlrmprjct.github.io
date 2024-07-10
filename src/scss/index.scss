@@ -32,6 +32,7 @@ main {
     color: var(--accent);
     padding: 0 0 0.3rem 0;
     position: relative;
+    background: transparent;
 
     &:hover {
         color: var(--accent);

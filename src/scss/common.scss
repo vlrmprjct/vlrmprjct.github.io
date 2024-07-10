@@ -11,6 +11,8 @@
 
 html {
    font-size: 10px;
+   font-family: 'Lato-Regular';
+   color: var(--text-primary);
    scroll-behavior: smooth;
 
     @media (max-width: #{convert-px-to-rem(600)}) {
@@ -20,8 +22,6 @@ html {
 
 body {
     background: var(--background-primary);
-    color: var(--text-primary);
-    font-family: 'Lato-Regular';
     font-size: 1.5rem;
     line-height: 1.6;
     padding: 0 2rem;
