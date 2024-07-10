@@ -16,5 +16,11 @@
         gap: 3rem;
         flex-flow: wrap;
         justify-content: center;
+
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
     }
 }

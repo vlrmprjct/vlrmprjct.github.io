@@ -47,49 +47,51 @@ export const About = ({ data }) => {
                     </a>
                 )}
 
-                {social && (
-                    <>
-                        {social.github && (
-                            <a
-                                href={social.github}
-                                aria-label="github"
-                                className="link link--icon"
-                            >
-                                <Icon icon="Github" />
-                            </a>
-                        )}
+                <div>
+                    {social && (
+                        <>
+                            {social.github && (
+                                <a
+                                    href={social.github}
+                                    aria-label="github"
+                                    className="link link--icon"
+                                >
+                                    <Icon icon="Github" />
+                                </a>
+                            )}
 
-                        {social.linkedin && (
-                            <a
-                                href={social.linkedin}
-                                aria-label="linkedin"
-                                className="link link--icon"
-                            >
-                                <Icon icon="Linkedin" />
-                            </a>
-                        )}
+                            {social.linkedin && (
+                                <a
+                                    href={social.linkedin}
+                                    aria-label="linkedin"
+                                    className="link link--icon"
+                                >
+                                    <Icon icon="Linkedin" />
+                                </a>
+                            )}
 
-                        {social.soundcloud && (
-                            <a
-                                href={social.soundcloud}
-                                aria-label="soundcloud"
-                                className="link link--icon"
-                            >
-                                <Icon icon="Soundcloud" />
-                            </a>
-                        )}
+                            {social.soundcloud && (
+                                <a
+                                    href={social.soundcloud}
+                                    aria-label="soundcloud"
+                                    className="link link--icon"
+                                >
+                                    <Icon icon="Soundcloud" />
+                                </a>
+                            )}
 
-                        {social.spotify && (
-                            <a
-                                href={social.spotify}
-                                aria-label="spotify"
-                                className="link link--icon"
-                            >
-                                <Icon icon="Spotify" />
-                            </a>
-                        )}
-                    </>
-                )}
+                            {social.spotify && (
+                                <a
+                                    href={social.spotify}
+                                    aria-label="spotify"
+                                    className="link link--icon"
+                                >
+                                    <Icon icon="Spotify" />
+                                </a>
+                            )}
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     )
