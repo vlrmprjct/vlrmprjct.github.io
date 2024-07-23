@@ -37,6 +37,12 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install dependencies ui
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm i @billomat/billomat-ui-ts --registry=https://registry.npmjs.org/ --//registry.npmjs.org/:_authToken=$NPM_TOKEN
+
       - name: Install dependencies
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
