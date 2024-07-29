@@ -41,7 +41,7 @@ jobs:
           node-version: '18'
 
       - name: Set up GitHub CLI
-        run: gh auth login --with-token < ${{ secrets.GITHUB_TOKEN }}
+        run: gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
 
       - name: Debug GitHub CLI
         run: gh auth status
