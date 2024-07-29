@@ -44,11 +44,9 @@ jobs:
         run: |
           TAG=$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "")
           echo "LATEST_TAG=$TAG" >> $GITHUB_ENV
-          echo "TAG_EXISTS=true" >> $GITHUB_ENV
           echo "$TAG"
 
       - name: Check if release exists
-        if: env.TAG_EXISTS == 'true'
         id: check_release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
