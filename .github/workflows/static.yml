@@ -39,20 +39,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: List all tags
-        run: git tag
-
       - name: Get latest tag
         id: get_latest_tag
         run: |
           TAG=$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "")
-          if [ -z "$TAG" ]; then
-            echo "No tags found"
-            echo "TAG_EXISTS=false" >> $GITHUB_ENV
-          else
-            echo "LATEST_TAG=$TAG" >> $GITHUB_ENV
-            echo "TAG_EXISTS=true" >> $GITHUB_ENV
-          fi
+          echo $TAG && "LATEST_TAG=$TAG" >> $GITHUB_ENV
 
       - name: Check if release exists
         if: env.TAG_EXISTS == 'true'
