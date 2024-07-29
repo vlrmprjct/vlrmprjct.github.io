@@ -37,6 +37,23 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Set up GitHub CLI
+        uses: actions/setup-gh@v2
+
+      - name: Get latest tag
+        id: get_latest_tag
+        run: echo "LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_ENV
+
+      - name: Check if release exists
+        id: check_release
+        run: |
+          if gh release view ${{ env.LATEST_TAG }}; then
+            echo "Release exists"
+          else
+            echo "Release does not exist"
+            echo "RELEASE_NOT_FOUND=true" >> $GITHUB_ENV
+          fi
+
       - name: Install dependencies
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
