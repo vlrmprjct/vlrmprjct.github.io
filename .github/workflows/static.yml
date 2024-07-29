@@ -43,7 +43,9 @@ jobs:
         id: get_latest_tag
         run: |
           TAG=$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "")
-          echo $TAG && "LATEST_TAG=$TAG" >> $GITHUB_ENV
+          echo "LATEST_TAG=$TAG" >> $GITHUB_ENV
+          echo "TAG_EXISTS=true" >> $GITHUB_ENV
+          echo "$TAG"
 
       - name: Check if release exists
         if: env.TAG_EXISTS == 'true'
