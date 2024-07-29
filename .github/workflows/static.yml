@@ -38,7 +38,7 @@ jobs:
           node-version: '18'
 
       - name: Set up GitHub CLI
-        uses: actions/setup-gh@v2
+        uses: actions4gh/setup-gh@v2
 
       - name: Get latest tag
         id: get_latest_tag
