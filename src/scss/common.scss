@@ -10,10 +10,10 @@
 }
 
 html {
-   font-size: 10px;
-   font-family: 'Lato-Regular';
-   color: var(--text-primary);
-   scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: Lato-Regular, sans-serif;
+    color: var(--text-primary);
+    scroll-behavior: smooth;
 
     @media (max-width: #{convert-px-to-rem(600)}) {
         font-size: 9px;
@@ -27,7 +27,12 @@ body {
     padding: 0 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
 

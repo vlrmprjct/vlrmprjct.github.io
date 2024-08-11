@@ -6,14 +6,15 @@
         0 0 1.5rem var(--accent),
         0 0 2.5rem var(--accent);
 
-        .btn:not(.btn--icon) {
-            box-shadow:
-                0 0 0.2rem var(--accent),
-                0 0 0.8rem var(--accent);
-        }
-        svg {
-            filter: url(#crt-glow);
-        }
+    .btn:not(.btn--icon) {
+        box-shadow:
+            0 0 0.2rem var(--accent),
+            0 0 0.8rem var(--accent);
+    }
+
+    svg {
+        filter: url("#crt-glow");
+    }
 
     .scanlines {
         position: fixed;
@@ -26,10 +27,10 @@
         background:
             repeating-linear-gradient(
                 0deg,
-                rgba(0, 0, 0, 0.1) 0,
-                rgba(0, 0, 0, 0.1) 0.2rem,
-                rgba(0, 0, 0, 0) 0.2rem,
-                rgba(0, 0, 0, 0) 0.4rem
+                #0000001A 0,
+                #0000001A 0.2rem,
+                #00000000 0.2rem,
+                #00000000 0.4rem
             );
     }
 }
