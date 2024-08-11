@@ -5,7 +5,7 @@
 $sm: 576 !default;
 $md: 768 !default;
 $lg: 992 !default;
-$xl: 1200  !default;
+$xl: 1200 !default;
 
 $breakpoints: (
     sm: $sm,
@@ -15,6 +15,7 @@ $breakpoints: (
 ) !default;
 
 @function convert-px-to-rem($rem) {
-    $calculated-value: calc($rem / 16);
-    @return #{$calculated-value} + rem;
+    $calculatedValue: calc($rem / 16);
+
+    @return #{$calculatedValue} + rem;
 }

@@ -1,6 +1,6 @@
-@import './theme';
-@import './fonts';
-@import './common';
+@import "./theme";
+@import "./fonts";
+@import "./common";
 
 [data-root] {
     display: flex;
@@ -30,7 +30,7 @@ main {
 
 .link {
     color: var(--accent);
-    padding: 0 0 0.3rem 0;
+    padding: 0 0 0.3rem;
     position: relative;
     background: transparent;
 
@@ -43,7 +43,7 @@ main {
     }
 
     &::before {
-        content: '';
+        content: "";
         display: inline;
         width: 0%;
         height: 0.2rem;
@@ -85,22 +85,19 @@ main {
             }
         }
 
-        &:before {
-            content: '';
+        &::before {
+            content: "";
             position: absolute;
             background-color: var(--accent-hover);
             right: 100%;
-            bottom: 0;
-            left: 0;
-            top: 0;
             transition: right 0.1s ease-in-out;
             color: var(--text-primary-invert);
             z-index: -1;
         }
 
-        &:hover:before,
-        &:focus:before {
-            right: 0;
+        &:hover::before,
+        &:focus::before {
+            inset: 0;
         }
     }
 

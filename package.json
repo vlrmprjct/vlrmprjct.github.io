@@ -19,6 +19,8 @@
         "remark-gfm": "^4.0.0"
     },
     "devDependencies": {
+        "@stylistic/stylelint-config": "^2.0.0",
+        "@stylistic/stylelint-plugin": "^3.0.0",
         "@svgr/webpack": "^8.1.0",
         "@types/react": "^18.3.3",
         "@types/react-dom": "^18.3.0",
@@ -33,6 +35,8 @@
         "sass-loader": "^14.2.1",
         "sass-resources-loader": "^2.2.5",
         "style-loader": "^4.0.0",
+        "stylelint": "^16.8.1",
+        "stylelint-config-standard-scss": "^13.1.0",
         "terser-webpack-plugin": "^5.3.10",
         "ts-loader": "^9.5.1",
         "typescript": "^5.5.2",
