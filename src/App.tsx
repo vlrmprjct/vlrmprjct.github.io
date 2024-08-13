@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { fetchData } from '@/utils';
 import { common } from '@/queries';
+import GitHubCalendar from 'react-github-calendar';
+import { ThemeContext } from '@/contexts/ThemeProvider';
 import {
     CRT,
     About,
@@ -12,12 +14,16 @@ import {
     Personal,
 } from '@/components';
 
+import * as color from './scss/theme.scss';
+
 export const App = () => {
 
     const [commonData, setCommonData] = useState({
         profile: {},
         stack: [],
     });
+
+    const [{ theme }] = useContext(ThemeContext);
 
     useEffect(() => {
         fetchData(common, ({ data }) => {
@@ -35,6 +41,19 @@ export const App = () => {
                 <Projects />
                 <Stack data={stack} />
                 <Personal />
+                <GitHubCalendar
+                    blockRadius={1}
+                    blockSize={10}
+                    colorScheme={theme}
+                    hideColorLegend={true}
+                    username="vlrmprjct"
+                    theme={{
+                        light: ['hsl(0, 0%, 92%)', color.accent],
+                        dark: ['hsl(0, 0%, 2%)', color.accent],
+                    }}
+                    style={{ margin: '0 auto' }}
+                    weekStart={1}
+                />
             </main>
             <ScrollToTop />
             <Footer />
