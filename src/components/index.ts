@@ -1,6 +1,7 @@
 export { About } from './About/About';
 export { Avatar } from './Avatar/Avatar';
 export { CRT } from './CRT/CRT';
+export { Github } from './Github/Github';
 export { Footer } from './Footer/Footer';
 export { Header } from './Header/Header';
 export { Icon } from './Icon/Icon';

@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { fetchData } from '@/utils';
 import { common } from '@/queries';
+import { ThemeContext } from '@/contexts/ThemeProvider';
 import {
     CRT,
     About,
+    Github,
     Footer,
     Header,
     ScrollToTop,
@@ -18,6 +20,8 @@ export const App = () => {
         profile: {},
         stack: [],
     });
+
+    const [{ theme }] = useContext(ThemeContext);
 
     useEffect(() => {
         fetchData(common, ({ data }) => {
@@ -35,6 +39,7 @@ export const App = () => {
                 <Projects />
                 <Stack data={stack} />
                 <Personal />
+                <Github theme={theme || 'dark'}/>
             </main>
             <ScrollToTop />
             <Footer />

@@ -67,6 +67,6 @@ $horizonDark: (
 
 :export {
     @each $key, $value in $horizonDark {
-        #{str-replace($key, '--', '')}: $value;
+        #{unquote(str-slice($key, 3, -1))}: $value;
     }
 }
