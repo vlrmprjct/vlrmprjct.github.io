@@ -104,7 +104,7 @@ module.exports = (env) => {
                     removeRedundantAttributes: true,
                     useShortDoctype: true,
                 },
-                inject: 'body',
+                scriptLoading: 'module'
             }),
             new CopyWebpackPlugin({
                 patterns: [
