@@ -12,7 +12,7 @@ Env.config({ path: `.env.local`, override: true });
 module.exports = (env) => {
     return {
         mode: (env.production) ? 'production' : 'development',
-        devtool: (env.production) ? 'nosources-source-map' : 'inline-source-map',
+        devtool: 'inline-source-map',
         stats: 'normal',
         devServer: {
             compress: true,
