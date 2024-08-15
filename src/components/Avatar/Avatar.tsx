@@ -8,7 +8,7 @@ export const Avatar = ({
 }) => {
     const avatarUrl = `https://github.com/${username}.png`;
 
-    return (
+    return !username ? null : (
         <img
             alt={alt}
             className="avatar"
