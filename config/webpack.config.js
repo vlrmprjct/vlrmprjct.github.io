@@ -12,7 +12,7 @@ Env.config({ path: `.env.local`, override: true });
 module.exports = (env) => {
     return {
         mode: (env.production) ? 'production' : 'development',
-        devtool: 'inline-source-map',
+        devtool: (env.production) ? false : 'inline-source-map',
         stats: 'normal',
         devServer: {
             compress: true,
@@ -148,6 +148,14 @@ module.exports = (env) => {
                 //         },
                 //     },
                 // },
+                cacheGroups: {
+                    vendor: {
+                        test: /[\\/]node_modules[\\/](?=.*\.js$)/,
+                        name: 'vendor',
+                        chunks: 'all',
+                        enforce: true,
+                    },
+                },
             },
         },
         output: {
