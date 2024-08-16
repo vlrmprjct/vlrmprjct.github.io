@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Icon } from '@/components';
 
 import './ScrollToTop.scss';
 
@@ -17,7 +18,7 @@ export const ScrollToTop = () => {
     return isVisible ? (
         <div className="scroll--top">
             <a href="#top">
-                {/* <FontAwesomeIcon icon={faChevronUp} size="xl" /> */}
+                <Icon icon="AngleTop" />
             </a>
         </div>
     ) : null;
