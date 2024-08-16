@@ -1,3 +1,4 @@
+import AngleTop from './angle-top.svg';
 import Close from './close.svg';
 import CRT from './crt.svg';
 import CRT_ON from './crt-on.svg';
@@ -13,6 +14,7 @@ import Spotify from './spotify.svg';
 import Sun from './sun.svg';
 
 export {
+    AngleTop,
     Close,
     CRT,
     CRT_ON,

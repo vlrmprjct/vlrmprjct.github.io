@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 21 21" height="21" width="21">
+    <path
+        d="M10 8.75 3.75 15l0.875 0.875 5.375 -5.375 5.375 5.375L16.25 15z"
+        fill="#000000"
+        stroke-width="1"
+    />
+    <path
+        d="M2.5 5h15v1.25H2.5Z"
+        fill="#000000"
+        stroke-width="1"
+    />
+</svg>
