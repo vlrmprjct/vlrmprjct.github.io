@@ -1,3 +1,5 @@
+@use "sass:string";
+
 $horizonLight: (
     "--accent-hover": #21BFC2CC,
     "--accent": #21BFC2,
@@ -15,6 +17,7 @@ $horizonLight: (
 );
 
 $horizonDark: (
+    color-scheme: dark,
     "--accent": #21BFC2,
     "--accent-hover": #21BFC2CC,
     "--background-primary": #16161C,
@@ -67,6 +70,6 @@ $horizonDark: (
 
 :export {
     @each $key, $value in $horizonDark {
-        #{unquote(str-slice($key, 3, -1))}: $value;
+        #{string.unquote(string.slice($key, 3, -1))}: $value;
     }
 }
