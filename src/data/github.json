@@ -1,0 +1,207 @@
+{
+    "fetchedAt": "2026-07-28T00:00:00.000Z",
+    "pinnedRepos": [
+        {
+            "name": "billomat.cli",
+            "description": "Experimental billomat cli.",
+            "homepageUrl": null,
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/billomat.cli",
+            "stargazerCount": 0,
+            "primaryLanguage": {
+                "name": "JavaScript"
+            }
+        },
+        {
+            "name": "gps-speed-meter",
+            "description": "A simple \"speedometer\" using GPS signal for ATTINY1634 or Arduino Pro Micro.",
+            "homepageUrl": null,
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "C++"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/gps-speed-meter",
+            "stargazerCount": 1,
+            "primaryLanguage": {
+                "name": "C++"
+            }
+        },
+        {
+            "name": "pia",
+            "description": "PIA - ( Electronic ) Parts Inventory Assistant ( evolved )",
+            "homepageUrl": "https://pia-evo.vercel.app",
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "JavaScript"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "SCSS"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "HTML"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "Shell"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/pia",
+            "stargazerCount": 27,
+            "primaryLanguage": {
+                "name": "JavaScript"
+            }
+        },
+        {
+            "name": "raveland",
+            "description": "Raveland - Audio Visualizer Using ThreeJS",
+            "homepageUrl": "https://vlrmprjct.github.io/raveland/",
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "JavaScript"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "CSS"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "HTML"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/raveland",
+            "stargazerCount": 0,
+            "primaryLanguage": {
+                "name": "JavaScript"
+            }
+        },
+        {
+            "name": "react.min",
+            "description": "ReactJS App Template with TS support without using VITE, CRA, etc.",
+            "homepageUrl": "https://react-min.vercel.app",
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "JavaScript"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "SCSS"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "TypeScript"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "HTML"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/react.min",
+            "stargazerCount": 0,
+            "primaryLanguage": {
+                "name": "JavaScript"
+            }
+        },
+        {
+            "name": "unreadable-binary-clock",
+            "description": "This is a binary clock unreadable for humans  :)",
+            "homepageUrl": null,
+            "languages": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "C++"
+                        }
+                    }
+                ]
+            },
+            "url": "https://github.com/vlrmprjct/unreadable-binary-clock",
+            "stargazerCount": 0,
+            "primaryLanguage": {
+                "name": "C++"
+            }
+        }
+    ],
+    "profile": "  - Boing boom tschak\n  - Hardcore introvert \n  - Unapologetic vinyl fanatic\n  - Incurable internet nerd\n  - Camper-Hacker and\n  - Youngtimer Owner\n  - Modular synth builder \n  - Hardware Maker\n  - Soundfetishist\n  - Producer\n  - Bored by superficial people\n  - Still not lovin FB/IG, even in 2026.\n  - and sometimes Yes, a developer :)\n",
+    "about": "Specializing in crafting clean, efficient frontend code that truly makes a difference. Fed up with outdated or bloated codebases? I create lightweight, high-quality solutions that moves projects forward. Whether you're diving into APIs, fine- tuning backends, or just enjoying coding, let's simplify complexity and ensure every line counts. \n\nLet's build something remarkable together.\n",
+    "common": {
+        "profile": {
+            "cv": "/downloads/cv_thomas_meschke_10_2024.pdf",
+            "email": "mail@lokalnetz.com",
+            "fullName": "Thomas Meschke",
+            "github": "vlrmprjct",
+            "homepage": "https://vlrmprjct.github.io/",
+            "name": "Thomas",
+            "role": "and not an average FrontEnd Engineer",
+            "title": "TM",
+            "social": {
+                "github": "https://github.com/vlrmprjct",
+                "linkedin": "https://www.linkedin.com/in/thomasmeschke/",
+                "soundcloud": "https://soundcloud.com/velorumproject",
+                "spotify": "https://open.spotify.com/artist/6BJ1ooPOrye37qP3w1z9zI"
+            }
+        },
+        "stack": [
+            "React",
+            "JavaScript",
+            "TypeScript",
+            "SASS",
+            "HTML",
+            "CSS",
+            "SVG",
+            "REST",
+            "GraphQL",
+            "Node",
+            "JSON",
+            "UI Packages",
+            "UX",
+            "Git",
+            "WSL",
+            "CLI",
+            "CI/CD",
+            "Jest",
+            "NPM",
+            "Webpack",
+            "Storybook",
+            "A11y",
+            "i18n",
+            "Responsive",
+            "PWA",
+            "VSCode"
+        ]
+    }
+}

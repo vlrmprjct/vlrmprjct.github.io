@@ -87,10 +87,12 @@ module.exports = (env) => {
             ],
         },
         plugins: [
+            // systemvars stays off: nothing in src/ reads process.env, and leaving it on
+            // would inline any CI secret that a future process.env.X reference happens to name.
             new Dotenv({
                 path: `./.env.${process.env.NODE_ENV}`,
                 safe: true,
-                systemvars: true,
+                systemvars: false,
                 silent: true,
             }),
             new MiniCssExtractPlugin({

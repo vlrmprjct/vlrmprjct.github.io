@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { fetchData } from '@/utils';
-import { common } from '@/queries';
+import React, { useContext } from 'react';
+import { common } from '@/data';
 import { ThemeContext } from '@/contexts/ThemeProvider';
 import {
     CRT,
@@ -16,20 +15,9 @@ import {
 
 export const App = () => {
 
-    const [commonData, setCommonData] = useState({
-        profile: {},
-        stack: [],
-    });
-
     const [{ theme }] = useContext(ThemeContext);
 
-    useEffect(() => {
-        fetchData(common, ({ data }) => {
-            setCommonData(JSON.parse(data.repository.object.text.replace(/^"(.*)"$/, '$1')));
-        });
-    }, []);
-
-    const { profile, stack } = commonData;
+    const { profile, stack } = common;
 
     return (
         <>

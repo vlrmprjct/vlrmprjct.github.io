@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { fetchData } from '@/utils';
+import React from 'react';
 import { Icon } from '@/components';
-import { about } from '@/queries';
+import { about as aboutContent } from '@/data';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -10,12 +9,6 @@ import './About.scss'
 export const About = ({ data }) => {
 
     const { email, name, role, cv, social } = data;
-
-    const [aboutContent, setAboutContent] = useState('');
-
-    useEffect(() => {
-        fetchData(about, ({ data }) => setAboutContent(data.repository.object.text));
-    }, []);
 
     return (
         <div className="about center">

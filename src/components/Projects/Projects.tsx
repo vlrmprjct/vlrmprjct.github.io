@@ -1,17 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { pinnedRepos } from '@/queries';
-import { fetchData } from '@/utils';
+import React from 'react';
+import { pinnedRepos as repos } from '@/data';
 import { ProjectContainer } from '@/components';
 
 import './Projects.scss';
 
 export const Projects = () => {
-
-    const [repos, setRepos] = useState([]);
-
-    useEffect(() => {
-        fetchData(pinnedRepos, ({ data }) => setRepos(data.user.pinnedItems.nodes));
-    }, []);
 
     return (
         <section id="projects" className="section projects">

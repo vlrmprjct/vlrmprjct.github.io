@@ -1,18 +1,11 @@
-import React, { useEffect, useState} from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { profile } from '@/queries';
-import { fetchData } from '@/utils';
+import { profile as readmeContent } from '@/data';
 
 import './Personal.scss'
 
 export const Personal = () => {
-
-    const [readmeContent, setReadmeContent] = useState('');
-
-    useEffect(() => {
-        fetchData(profile, ({ data }) => setReadmeContent(data.repository.object.text));
-    }, []);
 
     return (
         <section id="personal" className="section personal">
